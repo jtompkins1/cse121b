@@ -36,6 +36,7 @@ outputElement.innerHTML = html;
 }
 
 
+
 function doStuffList(data) {
     console.log(data);
     const pokeListElement = document.querySelector("#outputList");
