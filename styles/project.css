@@ -8,7 +8,7 @@
 /* HTML Selectors */
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(197, 242, 248);
+    background-color: rgb(226, 222, 210);
 
 }
 nav {
@@ -132,7 +132,7 @@ footer {
     font-weight: 700;
     margin: 1rem auto;
     width: 200px;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 2px solid rgba(0, 0, 0, 1);
     text-align: center;
     margin-bottom: 30px;
 }
