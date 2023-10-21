@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Final Project</title>
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <main id="gridly">
+        <h1 class="heading">BOOKS TO READ</h1>
+        <h2 class="subtitle">Wishlist</h2>
+    
+        <select id="sortBy" title="Choose a data filter.">
+          <option value="" disabled selected>Sort Books By</option>
+          <option value="title">Title</option>
+          <option value="author">Author</option>
+          <option value="published-date">Date Published</option>
+          <option value="random">Random</option>
+        </select>
+    
+        <div id="books">
+        </div> 
+      </main>
+
+    <footer>
+        &copy;<span id="year"></span> | Books to Read - Wishlist
+    </footer>
+    <script src="scripts/books.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <!-- <script src="scripts/final.js"></script> -->
+</body>
+</html>
