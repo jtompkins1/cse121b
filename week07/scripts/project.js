@@ -1,4 +1,4 @@
-
+//project.js
 const holidaysElement = document.querySelector("#holidays");
 
 let holidayList = [];
