@@ -8,7 +8,7 @@
 </head>
 <body>
     <main id="gridly">
-        <h1>2023 - US Holidays</h1>
+        <h1>2023 - U.S. Holidays</h1>
 
         <select id="sortBy" title="Choose a data filter.">
             <option value="" disabled selected>Filter Holidays</option>
@@ -31,7 +31,13 @@
 
         </div>
     </main>
+    <footer>
+        &copy;<span id="year"></span> | U.S. Holidays
+    </footer>
     <script src="scripts/holiday.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 </html>

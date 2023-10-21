@@ -38,22 +38,6 @@ h3 {
     text-align: center;
 }
 
-header {
-    margin-top: 70px;
-}
-
-picture {
-    margin: 0 auto;
-}
-
-picture img {
-    width: 240px;
-    height: auto;
-    border-radius: 5%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 30px #777;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -74,41 +58,6 @@ article div {
     text-align: right;
 }
 
-label {
-    padding: .35rem;
-}
-
-input {
-    padding: .35rem;
-}
-
-input[type="button"] {
-    padding: .5rem;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%
-}
-
-input[type="checkbox"] {
-    width: 25px;
-    height: 25px;
-}
-
-dt {
-    font-weight: 700;
-}
-
-dt::before {
-    content: "🏘️ ";
-}
-
-dd {
-    margin: 0 0 .5rem 2rem;
-    font-size: smaller;
-}
 
 footer {
     background-color: #444;
@@ -120,63 +69,8 @@ footer {
     bottom: 0;
 }
 
-/* Class Selectors */
-.active {
-    border-bottom: 1px solid yellow;
-}
-
-.open li {
-    display: block;
-}
-
-.block {
-    display: block;
-}
-
-.larger {
-    font-size: larger;
-    color: red;
-}
-
-.right {
-    width: 100%;
-    text-align: right;
-}
-
-.middle {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 1rem;
-} */
-
-/* ID Selectors */
-
-#home {
-    margin-top: 125px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-
 #section1 {
     background-color: rgb(225, 250, 225, .5);
-}
-
-#section2 {
-    background-color: rgba(200, 200, 250, 0.5);
-
-}
-
-#section2 div {
-    margin-bottom: 1rem;
-}
-
-#section3 {
-    background-color: rgb(250, 225, 250, .5);
 }
 
 #sortBy {
@@ -206,7 +100,6 @@ footer {
     text-align: center;
     margin-top: 0px;
 }
-
 
 
 /* Media Queries */
