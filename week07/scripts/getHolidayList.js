@@ -1,7 +1,6 @@
 //getHolidayList.js
 
-
-export const getHolidayList = async () => {
+const getHolidayList = async () => {
     const response = await fetch ("https://date.nager.at/api/v3/publicholidays/2023/US")
 
     if (response.ok) {
@@ -10,7 +9,7 @@ export const getHolidayList = async () => {
     }
 };
 
-
+export default getHolidayList;
 
 
 

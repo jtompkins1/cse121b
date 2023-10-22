@@ -7,7 +7,7 @@ const holidaysElement = document.querySelector("#holidays");
 
 let holidayList = [];
 
-const displayHolidays = (holidays, holidaysElement) => {
+const displayHolidays = (holidays) => {
     
     reset(holidaysElement);
 
@@ -83,12 +83,12 @@ const getHolidays = async () => {
     const data = await getHolidayList();
     if (data) {
         holidayList = data;
-        displayHolidays(holidayList, holidaysElement);
+        displayHolidays(holidayList);
     }
 };
 
 document.querySelector("#sortBy").addEventListener("change", () => {
-    sortBy(holidayList, holidaysElement)
+    sortBy(holidayList)
 });
 
 
