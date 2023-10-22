@@ -1,37 +1,10 @@
-//project.js
-import getHolidayList from "./getHolidayList.js";
-import reset from "./reset.js"
+//sortBy.js
 
 
-const holidaysElement = document.querySelector("#holidays");
+import { displayHolidays}  from "./displayHolidays.js";
+import reset from "./reset.js";
 
-let holidayList = [];
-
-const displayHolidays = (holidays, holidaysElement) => {
-    
-    reset(holidaysElement);
-
-    for (const index in holidays) {
-        if (holidays.hasOwnProperty(index)) {
-            const holiday = holidays[index];
-
-            const article = document.createElement("article");
-
-            const h3 = document.createElement("h3");
-            h3.textContent = holiday.date;
-
-            const h4 = document.createElement("h4");
-            h4.textContent = holiday.localName;
-
-            article.appendChild(h3);
-            article.appendChild(h4);
-
-            holidaysElement.appendChild(article);
-        }
-    }
-}
-
-function sortBy(holidays) {
+export function sortBy(holidays, holidaysElement) {
 
     reset(holidaysElement);
 
@@ -77,21 +50,5 @@ function sortBy(holidays) {
             break;
 
     }
-}
-
-const getHolidays = async () => {
-    const data = await getHolidayList();
-    if (data) {
-        holidayList = data;
-        displayHolidays(holidayList, holidaysElement);
-    }
 };
-
-document.querySelector("#sortBy").addEventListener("change", () => {
-    sortBy(holidayList, holidaysElement)
-});
-
-
-getHolidays();
-
 
