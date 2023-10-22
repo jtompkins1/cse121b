@@ -94,3 +94,4 @@ document.querySelector("#sortBy").addEventListener("change", () => {
 
 
 getHolidays();
+
